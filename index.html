@@ -12,6 +12,10 @@
   <!--LINKING FIREBASE TO PROJECT-->
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
+  <!--&lt;!&ndash;LINKING FIREBASE AUTH MODULE&ndash;&gt;-->
+  <!--<script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>-->
+  <!--<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />-->
+
   <!--LINKING JQUERY-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -19,7 +23,7 @@
   <script src="assets/javascript/app.js"></script>
 
   <!--IMPORTING GOOGLE FONT-->
-  <link href="https://fonts.googleapis.com/css?family=Fondamento" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 
   <!--LINKING CSS FILES-->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -28,8 +32,75 @@
 </head>
 
 <body>
-  <div>
-    test
+
+<header id="gameHeader">
+  <h1>Rock Paper Scissors: Multi-Player</h1>
+</header>
+
+<div class="pageWidth">
+
+  <div id="login">
+    <div class="centered">
+      <input id="playerNameInput" placeholder="Name">
+      <button id="startButton" type="submit">Start</button>
+    </div>
   </div>
+
+  <div id="salutation" class="centered">
+    <p>Welcome, <span id="playerName"></span>!</p>
+  </div>
+</div>
+<div class="row pageWidth">
+
+  <div id="playerOne" class="playerContainer">
+    <h1 id="playerOneName">Waiting for Player 1</h1>
+    <div id="playerOneChoices" class="choices">
+      <div class="row">
+        <p id="playerOneRock" class="choice" selection="rock">
+          Rock
+          <img src="assets/images/rock.png" class="rspImage">
+        </p>
+        <p id="playerOnePaper" class="choice" selection="paper">
+          Paper
+          <img src="assets/images/paper.png" class="rspImage">
+        </p>
+        <p id="playerOneScissors" class="choice" selection="scissors">
+          Scissors
+          <img src="assets/images/scissors.png" class="rspImage">
+        </p>
+      </div>
+      <div id="playerOneStats" class="playerStats"></div>
+    </div>
+
+  </div>
+
+  <div id="gameplay" class="playerContainer">
+    Get Ready!
+  </div>
+
+  <div id="playerTwo" class="playerContainer">
+    <h1 id="playerTwoName">Waiting for Player 2</h1>
+    <div id="playerTwoChoices" class="choices">
+      <div class="row">
+        <p id="playerTwoRock" class="choice" selection="rock">
+          Rock
+          <img src="assets/images/rock.png" class="rspImage">
+        </p>
+        <p id="playerTwoPaper" class="choice" selection="paper">
+          Paper
+          <img src="assets/images/paper.png" class="rspImage">
+        </p>
+        <p id="playerTwoScissors" class="choice" selection="scissors">
+          Scissors
+          <img src="assets/images/scissors.png" class="rspImage">
+        </p>
+      </div>
+      <div id="playerTwoStats" class="playerStats"></div>
+    </div>
+  </div>
+
+</div>
+
+
 </body>
 </html>

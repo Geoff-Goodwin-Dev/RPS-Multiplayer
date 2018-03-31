@@ -1,0 +1,109 @@
+body {
+  background-image: url("../images/rpsBG.png");
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#gameHeader {
+  font-weight: bold;
+  font-size: 46px;
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(104, 163, 208, 0.5);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);;
+}
+
+#login {
+  display: block;
+  margin: 0 auto;
+}
+
+.centered {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#playerNameInput {
+  width: 60%;
+  padding: 8px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#startButton {
+  width: 30%;
+  padding: 8px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#salutation {
+  display: none;
+  font-size: 36px;
+}
+
+.playerContainer {
+  height: 180px;
+  border: 1px solid #666666;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(104, 163, 208, 0.5);
+  width: 30%;
+  float: left;
+}
+
+.playerStats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.playerContainer h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.choice {
+  width: 28%;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px 3px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3), inset 2px 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.choice:hover {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2), inset 1px 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+.rspImage {
+  width: 100%;
+}
+
+#playerOneChoices {
+  display: none;
+}
+
+#playerTwoChoices {
+  display: none;
+}
+
+.row{
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pageWidth {
+  margin: 15px auto;
+  max-width: 980px;
+}
